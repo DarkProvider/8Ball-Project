@@ -116,7 +116,6 @@ body {
     top: -50px;
     left: -50px;
     z-index: 2;
-    animation: ball-movement 1s infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +131,6 @@ body {
     top: -50px;
     left: -50px;
     z-index: 2;
-    animation: ball-movement-2 1s infinite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,4 +184,8 @@ body {
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
+  }
+
+.apply-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   }
